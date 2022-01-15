@@ -11,7 +11,7 @@ The URL can be accessed from Postman using the endpoints listed below.
 
 ## Endpoints
 
-Please note that :id serves as a placeholder for the ID of the user or task to fetch. 
+In the below examples, :id serves as a placeholder for the ID of the user or task to fetch.
 
 ### Create
 * ```POST /users``` creates a user. Required data: name, email, password.

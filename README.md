@@ -32,7 +32,7 @@ In the below examples, :id serves as a placeholder for the ID of the user or tas
 
 ### Delete
 * ``` DELETE /users/me``` deletes the user's profile and all associated tasks.
-* ``` DELETE /tasks/:id``` deletes the specified tasks.
+* ``` DELETE /tasks/:id``` deletes the specified task.
 * ``` DELETE /users/me/avatar``` deletes the user's avatar.
 
 ## Built With

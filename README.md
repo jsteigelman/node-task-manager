@@ -17,8 +17,8 @@ This app is deployed to Heroku:
 * [bcryptjs](https://www.npmjs.com/package/bcryptjs) - library for password hashing
 * [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) - implementation of JSON Web Tokens
 * [mongodb](https://www.npmjs.com/package/mongodb) - driver to connect to a MongoDB database from a Node.js application
-* [mongoose](https://www.npmjs.com/package/mongoose) - MongoDB object modeling tool designed to work in an asynchronous environment
+* [mongoose](https://www.npmjs.com/package/mongoose) - Object Data Modeling library for MongoDB
 * [multer](https://www.npmjs.com/package/multer) - middleware for handling multipart/form-data when users upload files
-* [sharp](https://www.npmjs.com/package/sharp) - module for image processing including resizing
+* [sharp](https://www.npmjs.com/package/sharp) - module for image processing / resizing
 * [validator](https://www.npmjs.com/package/validator/v/0.2.1) - library of string validation, filtering and sanitization methods
 

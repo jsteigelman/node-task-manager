@@ -12,20 +12,20 @@ The URL can be accessed from Postman using the endpoints listed below.
 ## Endpoints
 
 ### Create
-```POST /users``` 
-```POST /tasks``` 
+* ```POST /users``` 
+* ```POST /tasks``` 
 ### Read
-``` GET /users/:id``` where :id serves as a placeholder for the ID of the user to fetch
-``` GET /users/me```
-``` GET /tasks/:id```
-``` GET /tasks```
+* ``` GET /users/:id``` where :id serves as a placeholder for the ID of the user to fetch
+* ``` GET /users/me```
+* ``` GET /tasks/:id```
+* ``` GET /tasks```
 ### Update
-``` PATCH /users/me```
-``` PATCH /tasks/:id```
+* ``` PATCH /users/me```
+* ``` PATCH /tasks/:id```
 ### Delete
-``` DELETE /users/me```
-``` DELETE /tasks/:id```
-``` DELETE /users/me/avatar```
+* ``` DELETE /users/me```
+* ``` DELETE /tasks/:id```
+* ``` DELETE /users/me/avatar```
 
 ## Built With
 * [Node.js](https://nodejs.org/en/) - JavaScript runtime environment

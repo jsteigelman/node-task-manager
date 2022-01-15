@@ -16,8 +16,8 @@ In the below examples, :id serves as a placeholder for the ID of the user or tas
 ### Create
 * ```POST /users``` creates a user. Required data: name, email, password.
 * ```POST /users/login``` logs in a user. Required data: email, password.
-* ```POST /users/logout``` logs out a user. No data required.
-* ```POST /users/logoutAll``` logs out a user across all devices. No data required.
+* ```POST /users/logout``` logs out the current user.
+* ```POST /users/logoutAll``` logs out the current user across all devices.
 * ```POST /users/me/avatar``` uploads a profile picture to user. The key must be named "avatar".
 * ```POST /tasks``` creates a task. The user must already be logged in. Required data: description.
 
@@ -28,7 +28,7 @@ In the below examples, :id serves as a placeholder for the ID of the user or tas
 
 ### Update
 * ``` PATCH /users/me``` updates the user profile. Data that can be updated: name, age, email, password.
-* ``` PATCH /tasks/:id``` updates a task. Data that can be udpated: description, completed.
+* ``` PATCH /tasks/:id``` updates a task. Data that can be updated: description, completed.
 
 ### Delete
 * ``` DELETE /users/me``` deletes the user's profile and all associated tasks.

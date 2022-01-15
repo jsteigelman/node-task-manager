@@ -11,23 +11,29 @@ The URL can be accessed from Postman using the endpoints listed below.
 
 ## Endpoints
 
-Please note that :id serves as a placeholder for the ID of the user or task to fetch.
+Please note that :id serves as a placeholder for the ID of the user or task to fetch. 
 
 ### Create
-* ```POST /users``` 
-* ```POST /tasks``` 
+* ```POST /users``` creates a user. Required data: name, email, password.
+* ```POST /users/login``` logs in a user. Required data: email, password.
+* ```POST /users/logout``` logs out a user. No data required.
+* ```POST /users/logoutAll``` logs out a user across all devices. No data required.
+* ```POST /users/me/avatar``` uploads a profile picture to user. The key must be named "avatar".
+* ```POST /tasks``` creates a task. The user must already be logged in. Required data: description.
+
 ### Read
-* ``` GET /users/:id``` 
-* ``` GET /users/me```
-* ``` GET /tasks/:id```
-* ``` GET /tasks```
+* ``` GET /users/me``` returns user profile.
+* ``` GET /tasks/:id``` returns the specified task. 
+* ``` GET /tasks``` returns all tasks associated to logged in user.
+
 ### Update
-* ``` PATCH /users/me```
-* ``` PATCH /tasks/:id```
+* ``` PATCH /users/me``` updates the user profile. Data that can be updated: name, age, email, password.
+* ``` PATCH /tasks/:id``` updates a task. Data that can be udpated: description, completed.
+
 ### Delete
-* ``` DELETE /users/me```
-* ``` DELETE /tasks/:id```
-* ``` DELETE /users/me/avatar```
+* ``` DELETE /users/me``` deletes the user's profile and all associated tasks.
+* ``` DELETE /tasks/:id``` deletes the specified tasks.
+* ``` DELETE /users/me/avatar``` deletes the user's avatar.
 
 ## Built With
 * [Node.js](https://nodejs.org/en/) - JavaScript runtime environment

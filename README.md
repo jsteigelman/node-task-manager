@@ -6,6 +6,7 @@ This is a task manager REST API that allows users to perform CRUD operations.
 ## Live Site URL
 This app is deployed to Heroku: 
 [https://steigelman-task-manager.herokuapp.com/](https://steigelman-task-manager.herokuapp.com/)
+The URL can be accessed from Postman using the endpoints listed below.
 
 ## Endpoints
 
